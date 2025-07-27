@@ -21,7 +21,7 @@ await connectCloudinary();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: ['https://imaginative-tapioca-e0e369.netlify.app/'],
+  origin: ['https://imaginative-tapioca-e0e369.netlify.app'],
   credentials: true,
 }));
 app.post('/stripe',express.raw({type:'application/json'}),stripeWebhooks)
